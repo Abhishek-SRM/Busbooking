@@ -45,6 +45,7 @@
 <!-- BEGIN: Body-->
 
 <body class="vertical-layout vertical-menu-modern 2-columns  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
     <!-- BEGIN: Header-->
     <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu floating-nav navbar-light navbar-shadow">
         <div class="navbar-wrapper">
@@ -92,7 +93,7 @@
                 </li>
                 <li class="nav-item has-sub mt-1"><a href="#"><i class="feather icon-menu"></i><span class="menu-title" data-i18n="Menu Levels">Bus</span></a>
                     <ul class="menu-content">
-                        <li class=""><a href="add-bus.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level"> Add  </span></a>
+                        <li class="is-shown "><a href="add-bus.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level"> Add  </span></a>
                         </li>
                         <li class="is-shown"><a href="edit-bus.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level">Edit / Delete </span></a>
                         </li>
@@ -102,15 +103,15 @@
                     <ul class="menu-content">
                         <li class=""><a href="add-route.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level"> Add </span></a>
                         </li>
-                        <li class="is-shown active "><a href="edit-busroute.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level">Edit / Delete </span></a>
+                        <li class="is-shown"><a href="edit-busroute.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level">Edit / Delete </span></a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item has-sub mt-1"><a href="#"><i class="feather icon-menu"></i><span class="menu-title" data-i18n="Menu Levels">Shedule Bus</span></a>
                     <ul class="menu-content">
-                        <li class=""><a href="add-bus-shedule.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level"> Add  </span></a>
+                        <li class="is-shown "><a href="add-bus-shedule.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level"> Add  </span></a>
                         </li>
-                        <li class="is-shown"><a href="edit-bus-shedule.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level">Edit / Delete </span></a>
+                        <li class="is-shown active "><a href="edit-bus-shedule.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Second Level">Edit / Delete </span></a>
                         </li>
                     </ul>
                 </li>
@@ -140,7 +141,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h4 class="card-title">
-                                Show All Route</h4>
+                                Schedule bus with all Route</h4>
                         </div>
                         <section id="basic-datatable">
                             <div class="row">
@@ -152,56 +153,45 @@
                                                     <table class="table zero-configuration">
                                                         <thead>
                                                             <tr>
-                                                                <th>Route Id </th>
+                                                                <th>Schedule Id</th>
                                                                 <th>Bus No</th>
-                                                                <th>Route origin </th>
-                                                                <th>Destination </th>
-                                                                <th>Stops(between)</th>
+                                                                <th>Driver Name</th>
+                                                                <th>Start At </th>
+                                                                <th>End At</th>
+                                                                <th>Journey Date</th>
                                                                 <th>Departure Time</th>
-                                                                <th>SArrival Time</th>
-                                                                <th>Fare</th>
+                                                                <th>Arrival Time</th>
                                                                 <th>Travel Time</th>
-                                                                <th>Top City</th>
-                                                                <th>Top Route</th>
                                                                 <th>Edit</th>
-                                                                <th>delete</th>
+                                                                <th>Delete</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td>21</td>
-                                                                <td>Saudagar</td>
-                                                                <td>Jalandhar</td>
-                                                                <td>Gurgaon</td>
-                                                                <td>10</td>
-                                                                <td>17-10-2021 14:17</td>
-                                                                <td>30-10-2021 14:17</td>
-                                                                <td>250.0</td>
-                                                                <td>2 hour 33 min</td>
-                                                                <td>false</td>
-                                                                <td>true</td>
+                                                                <td>64</td>
+                                                                <td>Sutlej</td>
+                                                                <td>ramesh</td>
+                                                                <td>Birgunj</td>
+                                                                <td>Kathmandu</td>
+                                                                <td>2021-10-05</td>
+                                                                <td>2021-10-06T09:50</td>
+                                                                <td>2021-10-07T09:50</td>
+                                                                <td>4 hr 3 min</td>
                                                                 <td>
-                                                                    <div class="btn btn-default text-center btn-success"> <i class="fa fa-edit mr-1"></i>Edit</div>
+                                                                    <div class="btn btn-sm p-1 btn-success"> <i class="fa fa-edit mr-1"></i>Edit</div>
                                                                 </td>
                                                                 <td>
-                                                                    <div class="btn btn-default text-center  btn-danger"> <i class="fa fa-trash mr-1"></i>Delete</div>
+                                                                    <div class="btn btn-sm p-1 btn-danger"> <i class="fa fa-trash mr-1"></i> Delete</div>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
                                                         <tfoot>
                                                             <tr>
-                                                                <th>Route Id </th>
-                                                                <th>Bus No</th>
-                                                                <th>Route origin </th>
-                                                                <th>Destination </th>
-                                                                <th>Stops(between)</th>
-                                                                <th>Departure Time</th>
-                                                                <th>SArrival Time</th>
-                                                                <th>Fare</th>
-                                                                <th>Travel Time</th>
-                                                                <th>Top City</th>
-                                                                <th>Top Route</th>
-                                                                <th>Action</th>
+                                                                <th>Driver ID </th>
+                                                                <th>Driver Name</th>
+                                                                <th>Contact </th>
+                                                                <th>Edit </th>
+                                                                <th>Delete</th>
                                                             </tr>
                                                         </tfoot>
                                                     </table>
